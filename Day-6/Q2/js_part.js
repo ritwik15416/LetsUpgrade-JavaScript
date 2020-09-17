@@ -56,7 +56,7 @@ function searchs(){
 function searchd(){
 	let val = document.getElementById('searchDest').value;
   let newData = bus.filter(function(oneBus){
-  	return (oneBus.src.toLowerCase().indexOf(val.toLowerCase())!=-1);
+  	return (oneBus.dest.toLowerCase().indexOf(val.toLowerCase())!=-1);
   });
   display(newData);
 }
